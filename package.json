@@ -8,7 +8,7 @@
     "node:version": "echo 'nodejs version: ' && node -v ",
     "test": "jest",
     "spectral:oas:lint:one": "spectral lint ./examples/example1.yaml",
-    "spectral:oas:lint": "spectral lint ./examples/*",
+    "spectral:oas:lint:all": "spectral lint ./examples/*",
     "spectral:oas:lint-warning-as-errors": "spectral lint -F warn ./examples/*"
   },
   "author": "",
