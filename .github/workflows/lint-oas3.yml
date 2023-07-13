@@ -11,10 +11,16 @@ on:
 jobs:
   spectral-lint:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node 18
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
+
       - run: npm install
+
       - run: npm run spectral:oas:lint
