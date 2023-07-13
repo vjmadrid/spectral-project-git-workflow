@@ -3,7 +3,7 @@ name: validate custom Spectral rules
 on:
   push:
     paths:
-      - ./spectral_rules/**/*.yaml
+      - ./config/spectral/rules/*.yaml
       - .github/workflows/validate-custom-spectral-rules.yml
   workflow_dispatch:
 
